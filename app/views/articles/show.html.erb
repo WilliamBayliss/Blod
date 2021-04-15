@@ -1,14 +1,13 @@
+<button class="button" type="button"><%= link_to "Index", root_path %></button>
+
 <h1> <%= @article.title %> </h1>
 
 <p> <%= @article.body %> </p>
-<ul>
-  <li> <%= link_to "Edit", edit_article_path(@article) %> </li>
-  <li> <%= link_to "Destroy", article_path(@article), 
-                    method: :delete,
-                    data: { confirm: "Are you sure?" } %> </li>
-</ul>
 
-<button class="button" type="button"><%= link_to "Index", root_path %></button>
+  <button class="button" type="button"> <%= link_to "Edit", edit_article_path(@article) %> </button>
+  <button class="button" type="button"> <%= link_to "Destroy", article_path(@article), 
+                    method: :delete,
+                    data: { confirm: "Are you sure?" } %> </button>
 
 <h2>Comments</h2>
 <%= render @article.comments %>
