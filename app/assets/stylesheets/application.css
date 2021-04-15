@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+html {
+     background-color: aquamarine;
+ }
+
+.main {
+    background-color: azure;
+    margin: 50px 100px 100px 50px;
+    padding: 50px;
+}
+
+a:link {
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: none;
+}
